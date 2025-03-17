@@ -6,6 +6,7 @@ export const dynamic = 'force-static';
 export async function GET() {
   return Response.json({
     message: 'I am a cached route?',
+    date: new Date().toISOString(),
   });
 }
 
